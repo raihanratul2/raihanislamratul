@@ -1,0 +1,131 @@
+/* =====
+Template Name: RIHAN ISLAM RATUL
+Template URI: https://raihanislamratul.com
+Author: Raihan Islam Ratul
+Author URI: https://raihanislamratul.com
+Description: A simple html5 portfolio template.
+Version: 1.0(sokal 7ta baze ghumaite gelam)
+===== */
+/*CSS INDEX
+1.COMMON CSS
+2.REUSEABLE COMPONENTS
+3.HERO
+4.ABOUT
+===*/
+/*COMM0N CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1rem;
+    color:#fff;
+    font-family: roboto;
+}
+/*REUSEABLE COMPONENTS*/
+.container{
+    max-width: 100rem;
+    margin: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #fff;
+}
+/*START HERO SECTION*/
+#hero{
+    height: 100vh;
+    background-color: #23232e;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 8rem;
+}
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 8rem;
+    
+}
+.hero-content p{
+    font-size: 2rem;
+}
+.hero-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.next-section {
+    text-align: center;
+}
+
+.next-section a {
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.next-section a ion-icon {
+    color: #fff;
+    font-size: 4rem;
+    position: relative;
+    -webkit-animation: arrow 2s ease-in infinite;
+            animation: arrow 2s ease-in infinite;
+    z-index: 999;
+}
+@keyframes arrow {
+    0%{
+        position: absolute;
+        top: 0rem;
+    }
+    50%{
+        position: absolute;
+        top: -3rem;
+    }
+    100%{
+        position: absolute;
+        top: 0rem;
+    }
+}
+/*STTART ABOUT SECTION*/
+#about{
+    height: 120vh;
+    background: url(./img/about.png) no-repeat center / cover;
+    background-blend-mode: overlay;
+    color: #464b4f;
+
+}
+.about-content h2{
+    font-size: 8rem;
+    color: #464b4f;
+    text-transform: uppercase;
+}
+.about-content{
+    text-align: center;
+    font-size: 3rem;
+    padding: 12rem;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.about-grid-item h4{
+    color: #464b4f;
+    font-size: 1.8rem;
+    font-family: raleway;
+    text-transform: uppercase;
+}
+.about-grid-item{
+    font-size: 1.8rem;
+    color: #464b4f;
+}
